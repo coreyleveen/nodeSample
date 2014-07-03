@@ -11,11 +11,11 @@ aBathingApp.initialize = function() {
 
   collection.fetch();
 
-  $('.monkeys').find('form').on('submit', function(e) {
+  $('.gorillas').find('form').on('submit', function(e) {
     e.preventDefault();
-    var monkeyName = $('input').val();
+    var gorillaName = $('input').val();
     $('input').val('');
-    collection.create({name: monkeyName});
+    collection.create({name: gorillaName});
   });
 
 };

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>aBathingApp</title>
+  <link rel="stylesheet" href="stylesheets/styles.css">
+
+  <!-- Libraries -->
+  <script type="text/javascript" src='javascripts/libraries/jquery.js'></script>
+  <script type="text/javascript" src='javascripts/libraries/underscore.js'></script>
+  <script type="text/javascript" src='javascripts/libraries/backbone.js'></script>
+
+  <!-- Templates -->
+  <script type='text/template' id='gorilla-template'>
+    <%= name %>... the gorilla
+    <button data-action='destroy'>
+      Delete
+    </button>
+    <button data-action='edit'>
+      Edit
+    </button>
+  </script>
+
+  <script type='text/template' id='edit-gorilla-template'>
+    <form>
+      <input type='text' placeholder="<%= name %> ">
+      </input>
+    </form>
+  </script>
+
+  <!-- App -->
+  <script type="text/javascript" src='javascripts/backbone/app.js'></script>
+
+  <!-- Models -->
+  <script type="text/javascript" src='javascripts/backbone/Gorilla.js'></script>
+
+  <!-- Collections -->
+  <script type="text/javascript" src='javascripts/backbone/collections/GorillaCollection.js'></script>
+
+  <!-- Views -->
+  <script type="text/javascript" src='javascripts/backbone/views/gorillas/GorillaView.js'></script>
+  <script type="text/javascript" src='javascripts/backbone/views/gorillas/GorillaListView.js'></script>
+
+</head>
+<body>
+
+</body>
+</html>

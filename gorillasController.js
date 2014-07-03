@@ -9,7 +9,7 @@ exports.index = function(req, res){
 
 exports.create = function(req, res){
   Gorilla.create({name: req.body.name}, function(error, gorilla){
-    if (err) return console.log(error);
+    if (error) return console.log(error);
     res.send(gorilla);
   });
 };

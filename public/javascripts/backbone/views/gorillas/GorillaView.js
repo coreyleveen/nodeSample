@@ -1,6 +1,6 @@
 var aBathingApp = aBathingApp || { Models: {}, Collections: {}, Views: {}, };
 
-aBathingApp.Views.GorillaView = Backbone.Model.extend({
+aBathingApp.Views.GorillaView = Backbone.View.extend({
   tagName: 'li',
   template: _.template($('#gorilla-template').html()),
   editFormTemplate: _.template($('#edit-gorilla-template').html()),
